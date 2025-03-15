@@ -21,7 +21,19 @@
   font-family: var(--nav-text-font-family);
   font-size: var(--nav-text-font-size);
   font-weight: var(--nav-text-font-weight);
+  padding-left: 2vh;
 }
+
+.rectangle.transparent .divsButtons > div,
+.rectangle.transparent .divsButtons a,
+.rectangle.transparent .divsButtons .text-wrapper-2,
+.rectangle.transparent .divsButtons .text-wrapper-3,
+.rectangle.transparent .divsButtons .text-wrapper-4,
+.rectangle.transparent .divsButtons .text-wrapper-5,
+.rectangle.transparent .divsButtons .text-wrapper-6 {
+  color: #000000;
+}
+
 
 .divsButtons .is-active {
   font-weight: bold;
@@ -134,6 +146,7 @@
 
 .rectangle.transparent {
   background-color: transparent;
+  --nav-text-color: #000000;
 }
 
 .rectangle.solid {

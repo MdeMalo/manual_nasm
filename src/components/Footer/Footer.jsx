@@ -8,21 +8,19 @@ const Footer = () => {
       <div className="footer-container">
         <h2>DESAFÍO NASM</h2>
         <nav className="footer-nav">
-          <NavLink to="#introduccion">Introducción</NavLink>
-          <NavLink to="#instalacion">Instalación y Configuración</NavLink>
+          <NavLink to="/introduccion">Introducción</NavLink>
+          <NavLink to="/instalacion">Instalación y Configuración</NavLink>
           <NavLink to="#ejemplos">Ejemplos Prácticos</NavLink>
           <NavLink to="#avanzados">Temas Avanzados</NavLink>
           <NavLink to="#recursos">Recursos y Enlaces</NavLink>
           <NavLink to="#contacto">Contacto y Ayuda</NavLink>
         </nav>
         <p>
-          El Desafío NASM es una experiencia única que celebra la pasión por la
-          programación en ensamblador. Reunimos a programadores de todos los niveles, con eventos de calidad,
-          competidores internacionales y nacionales, inscripciones accesibles y recompensas emocionantes.
-          Es más que una competencia: es un desafío, una conexión y una celebración de cada
-          línea de código escrita.{" "}
+        NASM es una herramienta poderosa que permite a los programadores adentrarse en el mundo del ensamblador x86, comprendiendo el funcionamiento interno del hardware y optimizando el rendimiento del software. Este manual está diseñado para guiarte paso a paso, desde los conceptos fundamentales hasta técnicas avanzadas, proporcionando ejemplos prácticos y explicaciones detalladas.
+
+Cada sección de este manual te ayudará a desarrollar habilidades clave en ensamblador, permitiéndote escribir código eficiente y entender cómo las computadoras ejecutan instrucciones a nivel más bajo.{" "}
           <span className="highlight">
-            Atrévete a explorar el territorio NASM.
+          Descubre el potencial de NASM y lleva tu conocimiento de programación a otro nivel.
           </span>
         </p>
         <p className="footer-contact">
@@ -30,7 +28,7 @@ const Footer = () => {
           <a href="mailto:malomtzjoseangel@gmail.com">malomtzjoseangel@gmail.com</a>
         </p>
         <p className="footer-copyright">
-          © {new Date().getFullYear()} Desafío NASM. Todos los derechos reservados.
+          © {new Date().getFullYear()} Manual NASM. Todos los derechos reservados.
         </p>
       </div>
     </footer>
