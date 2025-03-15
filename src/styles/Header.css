@@ -1,0 +1,40 @@
+.header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 40px;
+}
+
+.title {
+    margin: 0;
+    font-size: 2em;
+}
+
+.navList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}
+
+.navItem {
+    margin: 0 15px;
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+}
+
+.BannerImg {
+    width: 100%;
+    height: 50vh;
+}

@@ -1,0 +1,166 @@
+.footer {
+  background-color: #2d204d !important; /* Usando el color de fondo del navbar */
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff; /* Usando el color de texto del navbar */
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.footer-nav a {
+  color: #007bff; /* Usando el color de enlace activo del navbar */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-nav a:hover {
+  color: #ffffff; /* Usando el color de texto del navbar */
+}
+
+.footer p {
+  color: #ffffff; /* Usando el color de texto del navbar */
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.highlight {
+  color: #007bff; /* Usando el color de enlace activo del navbar */
+  font-weight: bold;
+}
+
+.footer-socials {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-socials h3 {
+  font-size: 18px;
+  color: #ffffff; /* Usando el color de texto del navbar */
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #007bff; /* Usando el color de enlace activo del navbar */
+  font-size: 24px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffffff; /* Usando el color de texto del navbar */
+  background-color: #555;
+}
+
+.footer-contact,
+.footer-address {
+  color: #ffffff; /* Usando el color de texto del navbar */
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footer-contact a,
+.footer-address a {
+  color: #007bff; /* Usando el color de enlace activo del navbar */
+  text-decoration: none;
+}
+
+.footer-contact a:hover,
+.footer-address a:hover {
+  color: #ffffff; /* Usando el color de texto del navbar */
+}
+
+.footer-copyright {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer h2 {
+    font-size: 24px;
+  }
+
+  .footer-nav {
+    text-align: center;
+  }
+
+  .footer-nav a {
+    font-size: 14px;
+  }
+
+  .footer p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .footer-socials h3 {
+    font-size: 16px;
+  }
+
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  .footer-contact,
+  .footer-address {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-nav {
+    text-align: center;
+    gap: 10px;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+
+  .footer p {
+    font-size: 13px;
+  }
+}

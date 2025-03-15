@@ -1,0 +1,128 @@
+.home-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.home-header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.imgLogo {
+    height: 10vh;
+}
+
+.home-header h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.welcome-section {
+    padding: 5vh 10vw;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.welcome-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.main-menu {
+    background-color: #343a40;
+    padding: 10px 0;
+}
+
+.main-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.main-menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.main-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.main-menu a:hover {
+    text-decoration: underline;
+}
+
+.intro-media {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.intro-image {
+    height: 5vh;
+}
+
+.cta-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Nueva sección: Historia de NASM */
+.history-section {
+    padding: 5vh 10vw;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.history-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.history-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.home-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+}
+
+.home-footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
