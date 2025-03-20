@@ -1,9 +1,9 @@
-/* Introduccion.css */
+/* Instalacion.css */
 
-.introduccion {
-    max-width: 70vw;
+.instalacion {
+    max-width: 900px;
     margin: 10vh auto;
-    padding: 10vh 40px;
+    padding: 40px;
     background: #ffffff;
     color: #2c3e50;
     font-family: 'Roboto', sans-serif;
@@ -12,7 +12,7 @@
     border-radius: 8px;
 }
 
-.introduccion__title {
+.instalacion__title {
     font-size: 2.8rem;
     text-align: center;
     margin-bottom: 40px;
@@ -20,7 +20,7 @@
     font-weight: 700;
 }
 
-.introduccion__section {
+.instalacion__section {
     margin-bottom: 40px;
     padding: 20px 30px;
     background: #f9f9f9;
@@ -29,11 +29,11 @@
     transition: transform 0.3s ease;
 }
 
-.introduccion__section:hover {
+.instalacion__section:hover {
     transform: translateY(-3px);
 }
 
-.introduccion__subtitle {
+.instalacion__subtitle {
     font-size: 1.8rem;
     margin-bottom: 20px;
     color: #34495e;
@@ -41,34 +41,43 @@
     padding-bottom: 10px;
 }
 
-.introduccion__text {
+.instalacion__text {
     font-size: 1.1rem;
     margin-bottom: 20px;
 }
 
-.introduccion__list {
+.instalacion__list {
     margin-left: 20px;
     list-style: disc;
 }
 
-.introduccion__list li {
+.instalacion__list li {
     margin-bottom: 10px;
     font-size: 1.1rem;
 }
 
-/* Diseño responsivo */
+.instalacion__code {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    overflow-x: auto;
+}
+  
+/* Responsividad */
 @media (max-width: 768px) {
-    .introduccion {
+    .instalacion {
         padding: 20px;
+        margin: 20px;
     }
-    .introduccion__title {
+    .instalacion__title {
         font-size: 2.2rem;
     }
-    .introduccion__subtitle {
+    .instalacion__subtitle {
         font-size: 1.5rem;
     }
-    .introduccion__text,
-    .introduccion__list li {
+    .instalacion__text, .instalacion__list li {
         font-size: 1rem;
     }
 }

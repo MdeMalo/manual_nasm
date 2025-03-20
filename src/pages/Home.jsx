@@ -22,7 +22,7 @@ const Home = () => {
             <nav className="main-menu">
                 <ul>
                     <li><a href="/introduccion">Introducción</a></li>
-                    <li><a href="#instalacion">Instalación y Configuración</a></li>
+                    <li><a href="/instalacion">Instalación y Configuración</a></li>
                     <li><a href="#ejemplos">Ejemplos Prácticos</a></li>
                     <li><a href="#avanzados">Temas Avanzados</a></li>
                     <li><a href="#recursos">Recursos y Enlaces</a></li>
