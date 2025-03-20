@@ -1,0 +1,111 @@
+.ejemplos {
+    max-width: 60vw;
+    margin: 10vh auto;
+    padding: 30px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ejemplos__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #341b70;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+}
+
+.ejemplos__title:hover {
+    color: #220f57;
+}
+
+.ejemplos__description {
+    font-size: 1.3rem;
+    color: #444;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+/* Contenedor del código */
+.codigo-container {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border-left: 6px solid #341b70;
+    text-align: left;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.codigo-container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Título del código */
+.codigo-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* Caja del código */
+.codigo-box {
+    background: #1e1e1e;
+    color: #f8f8f2;
+    padding: 18px;
+    border-radius: 6px;
+    font-family: "Courier New", monospace;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    transition: background 0.3s ease-in-out;
+}
+
+.codigo-box:hover {
+    background: #292929;
+}
+
+/* Enlace de descarga */
+.codigo-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 1.1rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.codigo-link:hover {
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .ejemplos {
+        padding: 20px;
+    }
+
+    .ejemplos__title {
+        font-size: 2rem;
+    }
+
+    .codigo-title {
+        font-size: 1.3rem;
+    }
+
+    .codigo-box {
+        font-size: 0.9rem;
+    }
+}

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <h2>DESAFÍO NASM</h2>
+        <h2>MANUAL NASM</h2>
         <nav className="footer-nav">
           <NavLink to="/introduccion">Introducción</NavLink>
           <NavLink to="/instalacion">Instalación y Configuración</NavLink>

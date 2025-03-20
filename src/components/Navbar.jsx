@@ -63,7 +63,7 @@ const Navbar = () => {
           <NavLink to="/instalacion" className="text-wrapper-2">
             Instalación y Configuración
           </NavLink>
-          <NavLink to="#ejemplos" className="text-wrapper-3">
+          <NavLink to="/ejemplos" className="text-wrapper-3">
             Ejemplos Prácticos
           </NavLink>
           <NavLink to="#avanzados" className="text-wrapper-4">
