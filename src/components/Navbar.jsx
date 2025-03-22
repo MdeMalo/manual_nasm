@@ -66,13 +66,13 @@ const Navbar = () => {
           <NavLink to="/ejemplos" className="text-wrapper-3">
             Ejemplos Prácticos
           </NavLink>
-          <NavLink to="#avanzados" className="text-wrapper-4">
+          <NavLink to="/avanzados" className="text-wrapper-4">
             Temas Avanzados
           </NavLink>
-          <NavLink to="#recursos" className="text-wrapper-5">
+          <NavLink to="/recursos" className="text-wrapper-5">
             Recursos y Enlaces
           </NavLink>
-          <NavLink to="#contacto" className="text-wrapper-6">
+          <NavLink to="/contacto" className="text-wrapper-6">
             Contacto y Ayuda
           </NavLink>
         </div>

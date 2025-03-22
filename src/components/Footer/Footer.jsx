@@ -10,10 +10,10 @@ const Footer = () => {
         <nav className="footer-nav">
           <NavLink to="/introduccion">Introducción</NavLink>
           <NavLink to="/instalacion">Instalación y Configuración</NavLink>
-          <NavLink to="#ejemplos">Ejemplos Prácticos</NavLink>
-          <NavLink to="#avanzados">Temas Avanzados</NavLink>
-          <NavLink to="#recursos">Recursos y Enlaces</NavLink>
-          <NavLink to="#contacto">Contacto y Ayuda</NavLink>
+          <NavLink to="/ejemplos">Ejemplos Prácticos</NavLink>
+          <NavLink to="/avanzados">Temas Avanzados</NavLink>
+          <NavLink to="/recursos">Recursos y Enlaces</NavLink>
+          <NavLink to="/contacto">Contacto y Ayuda</NavLink>
         </nav>
         <p>
         NASM es una herramienta poderosa que permite a los programadores adentrarse en el mundo del ensamblador x86, comprendiendo el funcionamiento interno del hardware y optimizando el rendimiento del software. Este manual está diseñado para guiarte paso a paso, desde los conceptos fundamentales hasta técnicas avanzadas, proporcionando ejemplos prácticos y explicaciones detalladas.
