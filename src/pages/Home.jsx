@@ -38,7 +38,7 @@ const Home = () => {
 
             {/* Llamada a la Acción (CTA) */}
             <section className="cta-section">
-                <a href="#ejemplos" className="cta-button">Empezar Ahora</a>
+                <a href="/ejemplos" className="cta-button">Empezar Ahora</a>
             </section>
 
             {/* Sección de Bienvenida e Introducción General */}

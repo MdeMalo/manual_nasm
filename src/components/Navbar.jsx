@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
-import logo2 from "../assets/logo192.png";
+import logo2 from "../assets/asm_logo.png";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
@@ -57,22 +57,22 @@ const Navbar = () => {
 
         {/* Botones principales de la navbar */}
         <div className={`divsButtons ${isMenuOpen ? "is-active" : ""}`}>
-          <NavLink to="/Introduccion" className="div">
+          <NavLink to="/introduccion" className="div">
             Introducción
           </NavLink>
-          <NavLink to="/instalacion" className="text-wrapper-2">
+          <NavLink to="/instalacion" className="div">
             Instalación y Configuración
           </NavLink>
-          <NavLink to="/ejemplos" className="text-wrapper-3">
+          <NavLink to="/ejemplos" className="div">
             Ejemplos Prácticos
           </NavLink>
-          <NavLink to="/avanzados" className="text-wrapper-4">
+          <NavLink to="/avanzados" className="div">
             Temas Avanzados
           </NavLink>
-          <NavLink to="/recursos" className="text-wrapper-5">
+          <NavLink to="/recursos" className="div">
             Recursos y Enlaces
           </NavLink>
-          <NavLink to="/contacto" className="text-wrapper-6">
+          <NavLink to="/contacto" className="div">
             Contacto y Ayuda
           </NavLink>
         </div>
@@ -87,27 +87,26 @@ const Navbar = () => {
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
         </div>
 
         {/* Menú desplegable para pantallas móviles */}
         <div className={`divsButtons-mobile ${isMenuOpen ? "is-active" : ""}`}>
-          <NavLink to="#introduccion" className="div">
+          <NavLink to="/introduccion" className="div">
             Introducción
           </NavLink>
-          <NavLink to="#instalacion" className="text-wrapper-2">
+          <NavLink to="/instalacion" className="div">
             Instalación y Configuración
           </NavLink>
-          <NavLink to="#ejemplos" className="text-wrapper-3">
+          <NavLink to="/ejemplos" className="div">
             Ejemplos Prácticos
           </NavLink>
-          <NavLink to="#avanzados" className="text-wrapper-4">
+          <NavLink to="/avanzados" className="div">
             Temas Avanzados
           </NavLink>
-          <NavLink to="#recursos" className="text-wrapper-5">
+          <NavLink to="/recursos" className="div">
             Recursos y Enlaces
           </NavLink>
-          <NavLink to="#contacto" className="text-wrapper-6">
+          <NavLink to="/contacto" className="div">
             Contacto y Ayuda
           </NavLink>
         </div>

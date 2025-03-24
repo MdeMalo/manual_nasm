@@ -60,6 +60,7 @@
 @media (max-width: 768px) {
     .introduccion {
         padding: 20px;
+        max-width: 100%;
     }
     .introduccion__title {
         font-size: 2.2rem;

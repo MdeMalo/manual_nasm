@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Header.css';
-import banner from '../assets/banner.png';
+import banner from '../assets/banner.svg';
 
 const Header = () => {
     return (

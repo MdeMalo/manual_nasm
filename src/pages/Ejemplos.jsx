@@ -18,12 +18,21 @@ const EjemploCodigo = ({ filename }) => {
             .catch((error) => console.error(error));
     }, [filename]);
 
+    const copiarAlPortapapeles = () => {
+        navigator.clipboard.writeText(codigo).then(() => {
+            alert('Código copiado al portapapeles');
+        }).catch((error) => {
+            console.error('Error al copiar al portapapeles: ', error);
+        });
+    };
+
     return (
         <div className="codigo-container">
             <h2 className="codigo-title">{filename}</h2>
             <SyntaxHighlighter language="nasm" style={dracula} className="codigo-box" showLineNumbers>
                 {codigo || "Cargando..."}
             </SyntaxHighlighter>
+            <button onClick={copiarAlPortapapeles} className="codigo-copy-button">📋 Copiar</button>
             <a href={`/nasm/${filename}`} download className="codigo-link">📥 Descargar {filename}</a>
         </div>
     );

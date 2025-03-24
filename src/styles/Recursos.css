@@ -89,6 +89,7 @@
     .recursos {
         padding: 20px;
         margin: 20px;
+        max-width: 100%;
     }
     .recursos__title {
         font-size: 2rem;

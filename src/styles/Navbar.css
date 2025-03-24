@@ -6,40 +6,7 @@
   --nav-text-color: #ffffff;
 }
 
-/* Aplica la fuente y los estilos a los elementos de la navbar */
-.divsButtons .div,
-.divsButtons .text-wrapper-2,
-.divsButtons .text-wrapper-3,
-.divsButtons .text-wrapper-4,
-.divsButtons .text-wrapper-5,
-.divsButtons .text-wrapper-6{
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
-  background: none;
-  border: none;
-  font-family: var(--nav-text-font-family);
-  font-size: var(--nav-text-font-size);
-  font-weight: var(--nav-text-font-weight);
-  padding-left: 2vh;
-}
-
-.rectangle.transparent .divsButtons > div,
-.rectangle.transparent .divsButtons a,
-.rectangle.transparent .divsButtons .text-wrapper-2,
-.rectangle.transparent .divsButtons .text-wrapper-3,
-.rectangle.transparent .divsButtons .text-wrapper-4,
-.rectangle.transparent .divsButtons .text-wrapper-5,
-.rectangle.transparent .divsButtons .text-wrapper-6 {
-  color: #000000;
-}
-
-
-.divsButtons .is-active {
-  font-weight: bold;
-  color: #007bff;
-}
-
+/* Reset y estilos básicos */
 * {
   margin: 0;
   padding: 0;
@@ -54,6 +21,7 @@
   z-index: 1000;
 }
 
+/* Contenedor principal de la navbar */
 .rectangle {
   background-color: var(--nav-bg-color);
   display: flex;
@@ -63,11 +31,23 @@
   transition: background-color 0.3s ease;
 }
 
+/* Variantes de fondo */
+.rectangle.transparent {
+  background-color: transparent;
+  --nav-text-color: #000000;
+}
+
+.rectangle.solid {
+  background-color: #2d204d;
+}
+
+/* Logo */
 .logoPosition img {
   height: 50px;
   width: auto;
 }
 
+/* Estilos para los enlaces de la navbar (versión desktop) */
 .divsButtons {
   display: flex;
   gap: 20px;
@@ -76,55 +56,63 @@
   margin-right: auto;
 }
 
-.divsButtons > div {
+.divsButtons > div,
+.divsButtons a {
+  text-decoration: none;
   color: var(--nav-text-color);
+  cursor: pointer;
+  background: none;
+  border: none;
   font-family: var(--nav-text-font-family);
   font-size: var(--nav-text-font-size);
   font-weight: var(--nav-text-font-weight);
-  text-align: center;
-  cursor: pointer;
+  padding-left: 2vh;
   transition: color 0.3s ease;
 }
 
-.divsButtons > div:hover {
+.divsButtons > div:hover,
+.divsButtons a:hover {
   color: #ddd;
 }
 
-.bigButtons {
-  margin-left: 20px;
-}
-
-.logout-button {
-  background-color: #ffffff;
-  color: var(--nav-bg-color);
+/* Estilos para el botón burger (oculto en desktop) */
+.navbar-burger {
+  display: none; /* Se mostrará en móviles */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 21px;
+  background: transparent;
   border: none;
-  padding: 8px 16px;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-right: 50%;
+  z-index: 1100;
 }
 
-.login-button {
-  background-color: #ffffff;
-  color: var(--nav-bg-color);
-  border: none;
-  padding: 8px 16px;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.navbar-burger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--nav-text-color);
+  transition: all 0.3s ease;
+  border-radius: 2px; /* Ajuste para que se vean mejor */
 }
 
-.login-button:hover {
-  background-color: #f8d32a;
+.navbar-burger.is-active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
 }
 
+.navbar-burger.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-burger.is-active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* Menú móvil: oculto por defecto */
 .divsButtons-mobile {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 15px;
   background-color: var(--nav-bg-color);
@@ -139,68 +127,35 @@
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+/* Cuando el menú móvil está activo */
 .divsButtons-mobile.is-active {
+  display: flex;
   opacity: 1;
   transform: translateY(0);
 }
 
-.rectangle.transparent {
-  background-color: transparent;
-  --nav-text-color: #000000;
+.divsButtons-mobile > div,
+.divsButtons-mobile a {
+  text-decoration: none;
+  color: var(--nav-text-color);
+  cursor: pointer;
+  font-family: var(--nav-text-font-family);
+  font-size: var(--nav-text-font-size);
+  font-weight: var(--nav-text-font-weight);
+  transition: color 0.3s ease;
 }
 
-.rectangle.solid {
-  background-color: #2d204d;
-}
-
-.divsButtons-mobile > div {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.divsButtons-mobile > div:hover {
+.divsButtons-mobile > div:hover,
+.divsButtons-mobile a:hover {
   color: #ddd;
 }
 
-/* Responsividad para pantallas pequeñas */
+/* Responsividad: oculta menú desktop y muestra burger en pantallas pequeñas */
 @media (max-width: 820px) {
   .divsButtons {
     display: none;
   }
-
-  .divsButtons-mobile {
+  .navbar-burger {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: var(--nav-bg-color);
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    padding: 15px;
-    border-radius: 5px;
-    z-index: 1000;
-  }
-
-  .divsButtons-mobile a {
-    text-decoration: none;
-    color: var(--nav-text-color);
-    cursor: pointer;
-    font-family: var(--nav-text-font-family);
-    font-size: var(--nav-text-font-size);
-    font-weight: var(--nav-text-font-weight);
-  }
-
-  .divsButtons-mobile > div {
-    color: var(--nav-text-color);
-    font-family: var(--nav-text-font-family);
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-    cursor: pointer;
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  }
-
-  .divsButtons-mobile > div:last-child {
-    border-bottom: none;
   }
 }
