@@ -1,13 +1,13 @@
 section .data ;Sección de datos
-    hello db "Hell0 WorlD!", 10 ;Mensaje a imprimir
+    hello dd "Hell0 WorlD!", 10 ;Mensaje a imprimir
     helloLen equ $ - hello ;Longitud del mensaje
-    N equ 10 ;Número de veces que se imprimirá el mensaje
+    N dd 10 ;Número de veces que se imprimirá el mensaje
 
 section .text ;Sección de código
     global _start ;Declaración de la etiqueta de entrada (_start) para el enlazador
 
 _start: ;Inicio del programa
-    mov ecx, N ;Contador
+    mov ecx, [N] ;Contador
 
 .loop: ;Etiqueta de ciclo
     push ecx     ;Guardamos el valor del contador en ecx
